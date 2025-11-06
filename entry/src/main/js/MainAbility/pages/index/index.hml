@@ -1,0 +1,6 @@
+<div class="container">
+    <text class="title">
+        {{ $t('strings.game_title') }}
+    </text>
+    <input type="button" class="add-btn" value="Start Game" onclick="onStartGameClicked"/>
+</div>

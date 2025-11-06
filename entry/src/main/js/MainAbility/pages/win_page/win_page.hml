@@ -1,0 +1,9 @@
+<div class="container">
+    <text class="title">
+        {{ $t('strings.congrats') }}
+    </text>
+    <text class="title">
+        {{ $t('strings.score') }} {{ score }}
+    </text>
+    <input type="button" class="congrats-btn" value="{{ $t('strings.play_again') }}" onclick="onPlayAgainClicked"/>
+</div>

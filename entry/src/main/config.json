@@ -1,0 +1,54 @@
+{
+  "app": {
+    "bundleName": "com.hmosdemos.morseguardlite",
+    "vendor": "hmosdemos",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": [
+      "liteWearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "srcPath": "MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "label": "$string:MainAbility_label",
+        "type": "page"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/game/game",
+          "pages/win_page/win_page"
+        ],
+        "name": ".MainAbility"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "reason",
+        "usedScene": {
+          "ability": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ]
+  }
+}

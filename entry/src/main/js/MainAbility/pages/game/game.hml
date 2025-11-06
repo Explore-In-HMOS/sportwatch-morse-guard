@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="toolbar">
+        <input type="button" class="game-btn success" value="{{ $t('strings.restart') }}" onclick="resetGame"/>
+        <input type="button" class="game-btn info" value="{{ $t('strings.replay_pattern') }}" onclick="replayPattern"/>
+    </div>
+
+    <text class="game-title">{{ $t('strings.app_name') }}</text>
+
+    <div if="{{ solved === true }}" class="choices">
+        <div if="{{ options[0] === targetLetter }}" class="choice-container">
+            <text>{{ $t('strings.round') }} {{ round }}</text>
+            <input type="button" class="game-btn info correct" value="{{ options[0] }}" onclick="chooseFirst"/>
+        </div>
+        <div else class="choice-container">
+            <text>{{ $t('strings.round') }} {{ round }}</text>
+            <input type="button" class="game-btn info wrong" value="{{ options[0] }}" onclick="chooseFirst"/>
+        </div>
+        <div if="{{ options[1] === targetLetter }}" class="choice-container">
+            <text>{{ $t('strings.score') }} {{ score }}</text>
+            <input type="button" class="game-btn info correct" value="{{ options[1] }}" onclick="chooseSecondOpt"/>
+        </div>
+        <div else class="choice-container">
+            <text>{{ $t('strings.score') }} {{ score }}</text>
+            <input type="button" class="game-btn info wrong" value="{{ options[1] }}" onclick="chooseSecondOpt"/>
+        </div>
+    </div>
+
+    <div else class="choices">
+        <div class="choice-container">
+            <text>{{ $t('strings.round') }} {{ round }}</text>
+            <input type="button" class="game-btn info" value="{{ options[0] }}" onclick="chooseFirst"/>
+        </div>
+        <div class="choice-container">
+            <text>{{ $t('strings.score') }} {{ score }}</text>
+            <input type="button" class="game-btn info" value="{{ options[1] }}" onclick="chooseSecondOpt"/>
+        </div>
+    </div>
+
+    <text class="tip">{{ $t('strings.tip_msg') }}</text>
+</div>

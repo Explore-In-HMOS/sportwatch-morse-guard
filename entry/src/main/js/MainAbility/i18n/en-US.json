@@ -1,0 +1,13 @@
+{
+  "strings": {
+    "app_name": "Morse Guess",
+    "game_title": "Welcome to \n Morse Guess Game",
+    "congrats": "Congratulations",
+    "play_again": "Play Again",
+    "restart": "Restart",
+    "replay_pattern": "Replay Pattern",
+    "round": "Round:",
+    "score": "Score:",
+    "tip_msg": "Tip: Use Replay Pattern to feel the vibration again."
+  }
+}

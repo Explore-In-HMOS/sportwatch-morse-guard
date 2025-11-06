@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    width: 80%;
+    font-size: 36px;
+    text-align: center;
+}
+
+.add-btn {
+    width: 70%;
+    font-size: 22px;
+    background-color: #2563eb;
+    color: white;
+    height: 60px;
+    border-radius: 30px;
+}
