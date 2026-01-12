@@ -22,7 +22,9 @@ haptic feedback, random letter generation, and simple gesture interaction to cre
 - **Cognitive Training**: Improve reaction time and memory by recognizing vibration patterns.
 - **Wearable Interaction Demo**: Showcases the use of haptics and motion sensors on HarmonyOS devices.
 
-# Tech Stack
+# Technology
+
+## Stack
 
 - **Languages**: Javascript
 - **Framework**: HarmonyOS Lite SDK 5.0.0 (12)
@@ -80,7 +82,7 @@ MorseGuardLite/
 - Huawei Sport (Lite) D2
 - Huawei Sport (Lite) Ultimate
 
-## License
+# License
 
 **Morse Guard Lite** is distributed under the terms of the **MIT License**.  
 See the [license](/LICENSE) file for more information.

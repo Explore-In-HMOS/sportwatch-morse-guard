@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.morseguardlite",
+    "bundleName": "com.hmosdemos.lite_wearable.morse_guard_lite",
     "vendor": "hmosdemos",
     "version": {
       "code": 1000000,

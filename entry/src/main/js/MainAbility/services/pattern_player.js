@@ -28,7 +28,7 @@ export default class PatternPlayer {
                         onComplete();
                     }
                 });
-                return;
+                return true;
             }
 
             const ch = parts[i];
@@ -52,6 +52,7 @@ export default class PatternPlayer {
                     });
                 }
             });
+            return true;
         };
 
         playStep(0);
